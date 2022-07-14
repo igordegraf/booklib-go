@@ -1,0 +1,24 @@
+	//Laravel: для запуска создать БД: php artisan migrate
+	//Laravel: для запуска заполнить БД: php artisan db:seed --class=TestDataSeeder
+	//Laravel: для запуска переименовать .env.example в .env
+	//Laravel: в .env APP_URL=http://booklib поменять на нужный
+	//Laravel: прописать свой полный путь к БД в .env DB_DATABASE= 
+	//Laravel: небольшое описание методов сервиса приведено в README.md
+
+	//todo Laravel: убрать вывод pivot объектов при сериализации realtions
+	//todo Laravel: PUT методы временно заменены на POST (bug? FormRequest не парсит тело для PUT). После перехода на JSON станет неактуально.
+	//todo Laravel: пагинация сделана через встроенный в Eloquent компонент и заточена для реактивного фронта. ?В перспективе реализовать вручную?
+
+	//Go: для сборки проекта нужен установленныфй gcc компилятор (зависимость драйвера gorm sqlite3)
+	//Go: для запуска в .env файл прописать: db_name = database\database.db
+	//Go: для запуска в .env файл прописать нужный порт: port = 8081
+	//GO: миграция БД делается автоматически при запуске вседга через
+	//Go: для заполнения тестовых данных в БД .env файл прописать !только при первом запуске!: db_seed = true
+
+	//todo Go: правильная работа с датами в моделях (сейчас даты как строки). Предполагается через gorm.io/datatypes.Date
+	//todo Go: пагинация выборки книг и авторов. Стоит заглушка UnderConstruction()
+	//todo Go: реализовать PUT запросы на обновление. Стоит заглушка UnderConstruction()
+	//todo Go: Поиск книги по автору и автора по книге. Стоит заглушка UnderConstruction()
+
+	//todo Go,Laravel: хранение количества книг автора в БД вместо подсчёта на лету
+	//todo Go,Laravel: POST вызовы в Go сервисе принимают JSON тело, в Laravel принимают form-data. ?Перейти на JSON в Laravel?
